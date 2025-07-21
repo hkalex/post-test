@@ -15,12 +15,15 @@ window.onload = function()
 	console.log('Landing page loaded 1');
 	initialLoad = false;
 
-	  if (window.opener) {
+	  
+	
+}
+
+	if (window.opener) {
+		console.log('Landing page before post message');
 	        // This is the way to tell the caller that "READY"
 	        window.opener.postMessage("READY", "https://eldersinsurance--devmod.sandbox.lightning.force.com")
    	 }
-	
-}
 
 	// Called sometime after postMessage is called
 window.addEventListener('message', (event) => {
@@ -60,7 +63,7 @@ else
  
 <body>
 
-<b>This is the Landing Page</b>
+<b>This is the Landing Page 1</b>
 
 
 </body>
