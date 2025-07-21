@@ -15,18 +15,11 @@ window.onload = function()
 	console.log('Landing page loaded 1');
 	initialLoad = false;
 
-	const handleMessage = event => {
-           
- 
-            // Process the received data
-             console.log('salesforcer data - ', event.data);
-        };
- 
-        window.addEventListener('message', handleMessage);
+	
 }
 
 	// Called sometime after postMessage is called
-/*window.addEventListener("message", (event) => {
+window.addEventListener('message', (event) => {
   // Do we trust the sender of this message?
  // if (event.origin !== "http://example.com:8080") return;
 
@@ -39,7 +32,7 @@ window.onload = function()
   // event.origin as the targetOrigin.
 
 console.log('event.data=='+event.data);
-if(event.data == "Are you Ready")
+/*if(event.data == "Are you Ready")
 {
 	console.log('before post message');
 
@@ -52,10 +45,10 @@ if(event.data == "Are you Ready")
 else
 {
 	console.log('Data received from SF=='+event.data);
-}
+}*/
 
 
-});*/
+});
 
 
     </script>
