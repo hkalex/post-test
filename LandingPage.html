@@ -15,6 +15,10 @@ window.onload = function()
 	console.log('Landing page loaded 1');
 	initialLoad = false;
 
+	  if (window.opener) {
+	        // This is the way to tell the caller that "READY"
+	        window.opener.postMessage("READY", "https://eldersinsurance--devmod.sandbox.lightning.force.com")
+   	 }
 	
 }
 
