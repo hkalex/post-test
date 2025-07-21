@@ -15,10 +15,14 @@ window.onload = function()
 	console.log('Landing page loaded');
 	initialLoad = false;
 
-	window.addEventListener("message", (event) => {
-			console.log('event.data=='+event.data);
-		
-	});
+	const handleMessage = event => {
+           
+ 
+            // Process the received data
+             console.log('salesforcer data - ', event.data);
+        };
+ 
+        window.addEventListener('message', handleMessage);
 }
 
 	// Called sometime after postMessage is called
